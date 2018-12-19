@@ -8,8 +8,8 @@
 ## Git
 1. Update the master branch
 		
-	  git fetch upstream
-	  git merge upstream/master
+	    git fetch upstream
+	    git merge upstream/master
 
 	- For the first time, you need to registor the address of the github repository
 
@@ -17,9 +17,9 @@
 
 1. Commit all current works and push to the upstream
 
-	  git add -A
-	  git commit -a
-	  git push origin master
+	    git add -A
+	    git commit -a
+	    git push origin master
 
 	- If you are working at the branch other than the master branch
 
@@ -29,9 +29,9 @@
 
 1. Pull request
 
-	  git add -A
-	  git commit -a
-	  git push origin harakonan
+	    git add -A
+	    git commit -a
+	    git push origin harakonan
 
 	- harakonan is the name of my working branch
 	- Pull request on the github page after the push
