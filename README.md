@@ -79,7 +79,8 @@
 	
 				  uplatex.sh (-b) file-name_w/o_extension
 
-				- option -b: biber
+				- options
+					- -b biber
 	
 		1. pLaTeX
 			- SJIS can be used
@@ -90,6 +91,9 @@
 			- Compilation
 	
 				  platex.sh (-b) file-name_w/o_extension
+
+				- options
+					- -b biber
 	
 	1. beamer
 		1. upLaTeX (recommended)
@@ -105,6 +109,9 @@
 	
 				  uplatex.sh (-b) file-name_w/o_extension
 
+				- options
+					- -b biber
+
 		1. pLaTeX
 			- SJIS can be used
 			- Preamble
@@ -118,3 +125,6 @@
 			- Compilation
 	
 				  platex.sh (-b) file-name_w/o_extension
+
+				- options
+					- -b biber
