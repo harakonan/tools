@@ -13,7 +13,7 @@
 
 	- For the first time, you need to registor the address of the github repository
 
-		  git remote add upstream github repository address
+		  git remote add upstream github_repository_address
 
 1. Commit all current works and push to the upstream
 
@@ -25,7 +25,7 @@
 
 		  git pull origin master
 		  git checkout master
-		  git merge current working branch name
+		  git merge current_working_branch_name
 
 1. Pull request
 
@@ -63,41 +63,57 @@
 			- bbl file was not updated without manual compilation
 				- Manual bibtex compilation code
 
-					  bibtex file-name w/o extension
+					  bibtex file-name_w/o_extension
 
 				- The cause may be the use of Havard package
 
 1. TeX file in Japanese
-	1. upLaTeX (recommended)
-		- Only use utf-8
-		- Preamble
+	1. jsarticle
+		1. upLaTeX (recommended)
+			- Only use utf-8
+			- Preamble
+	
+				  \documentclass[12pt,a4paper,dvipdfmx,upLaTeX]{jsarticle}
+	
+			- Compilation
+				- option -b: biber
+	
+				  uplatex.sh (-b) file-name_w/o_extension
+	
+		1. pLaTeX
+			- SJIS can be used
+			- Preamble
+	
+				  \documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
+	
+			- Compilation
+	
+				  platex.sh (-b) file-name_w/o_extension
+	
+	1. beamer
+		1. upLaTeX (recommended)
+			- Only use utf-8
+			- Preamble
+	
+				  \documentclass[dvipdfmx,14pt]{beamer}
+				  \usepackage{bxdpx-beamer}
+				  \usepackage{pxjahyper}
+				  \renewcommand{\kanjifamilydefault}{\gtdefault}
+	
+			- Compilation
+	
+				  uplatex.sh (-b) file-name_w/o_extension
 
-			  \documentclass[12pt,a4paper,dvipdfmx,upLaTeX]{jsarticle}
-
-		- Compilation
-
-			  uplatex.sh file-name w/o extension
-
-	1. pLaTeX
-		- SJIS can be used
-		- Preamble
-
-			  \documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
-
-		- Compilation
-
-			  platex.sh file-name w/o extension
-
-	1. Beamer
-		- Preamble
-
-			  \documentclass[dvipdfmx,12pt]{beamer}
-			  \usepackage{bxdpx-beamer}
-			  \usepackage{pxjahyper}
-			  \usepackage{minijs}
-			  \renewcommand{\kanjifamilydefault}{\gtdefault}
-
-		- Compilation
-
-			  platex.sh file-name w/o extension
-
+		1. pLaTeX
+			- SJIS can be used
+			- Preamble
+	
+				  \documentclass[dvipdfmx,14pt]{beamer}
+				  \usepackage{bxdpx-beamer}
+				  \usepackage{pxjahyper}
+				  \usepackage{minijs}
+				  \renewcommand{\kanjifamilydefault}{\gtdefault}
+	
+			- Compilation
+	
+				  platex.sh (-b) file-name_w/o_extension
