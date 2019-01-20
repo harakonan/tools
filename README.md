@@ -128,3 +128,35 @@
 
 				- options
 					- -b biber
+
+
+## Format conversions
+
+1. md -> tex
+	1. Convert md to tex
+
+		  md-tex.sh file-name_w/o_extension
+
+	1. In the final tex file
+		- Add `\def\tightlist{}` to the preamble
+		- Add `\input{file-name.tex}` to the target position
+
+1. R -> Rnw
+	1. Write R file with Rnw commands like chunks and chapter titles
+	1. Add `# ` before `\`, `<<`, and `@` to execute as an R file
+	1. Paste contents of R file between `\maketitle{}` and `\end{document}` in the Rnw file
+	1. Remove `# ` before `\`, `<<`, and `@`
+		- Next code will do this and open Rnw file with RStudio
+
+			  r-rnw.sh file-name_w/o_extension
+
+	1. Compile Rnw file in RStudio
+
+
+## Permission
+
+1. Permit execution of an sh file
+
+	  chmod 755 file-name
+
+	
