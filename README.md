@@ -76,9 +76,10 @@
 				  \documentclass[12pt,a4paper,dvipdfmx,upLaTeX]{jsarticle}
 	
 			- Compilation
-				- option -b: biber
 	
 				  uplatex.sh (-b) file-name_w/o_extension
+
+				- option -b: biber
 	
 		1. pLaTeX
 			- SJIS can be used
