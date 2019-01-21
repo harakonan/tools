@@ -40,9 +40,18 @@
 		  git checkout -b harakonan
 
 
-## LaTeX
+## LATEX
 
-1. Font size in LaTeX
+1. LATEX documents
+	- The LATEX2ε Sources
+
+		  texdoc source2e
+
+	- Standard Document Classes for LATEX
+
+		  texdoc classes
+
+1. Font size in LATEX
 	
 	| preamble | 10pt | 11pt | 12pt |
 	|:---|:---|:---|:---|
@@ -67,9 +76,9 @@
 
 				- The cause may be the use of Havard package
 
-1. TeX file in Japanese
+1. tex file in Japanese
 	1. jsarticle
-		1. upLaTeX (recommended)
+		1. uplatex (recommended)
 			- Only use utf-8
 			- Preamble
 	
@@ -82,7 +91,7 @@
 				- options
 					- -b biber
 	
-		1. pLaTeX
+		1. platex
 			- SJIS can be used
 			- Preamble
 	
@@ -96,7 +105,7 @@
 					- -b biber
 	
 	1. beamer
-		1. upLaTeX (recommended)
+		1. uplatex (recommended)
 			- Only use utf-8
 			- Preamble
 	
@@ -112,7 +121,7 @@
 				- options
 					- -b biber
 
-		1. pLaTeX
+		1. platex
 			- SJIS can be used
 			- Preamble
 	
@@ -135,7 +144,7 @@
 1. md -> tex
 	1. Convert md to tex
 
-		  md-tex.sh file-name_w/o_extension
+		   md-tex.sh file-name_w/o_extension
 
 	1. In the final tex file
 		- Add `\def\tightlist{}` to the preamble
@@ -157,6 +166,6 @@
 
 1. Permit execution of an sh file
 
-	  chmod 755 file-name
+	   chmod 755 file-name
 
 	
