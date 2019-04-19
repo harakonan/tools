@@ -82,7 +82,7 @@
 			- Only use utf-8
 			- Preamble
 	
-				  \documentclass[12pt,a4paper,dvipdfmx,upLaTeX]{jsarticle}
+				  \documentclass[12pt,a4paper,dvipdfmx,uplatex]{jsarticle}
 	
 			- Compilation
 	
