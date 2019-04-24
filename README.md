@@ -162,6 +162,34 @@
 	1. Compile Rnw file in RStudio
 
 
+## MySQL
+
+1. Commands
+	- Start
+		  
+		  mysql.server start
+
+	- Log in to MySQL as the root user
+
+		  mysql -u root -p
+
+	- Log in to MySQL as a user named harakonan
+
+		  mysql -u harakonan -p
+
+	- Work with database named dbname
+
+		  use dbname
+
+	- Start
+		  
+		  mysql.server stop
+
+1. Notes
+	- Location of the data file of the database dbname
+		- `/usr/local/var/mysql/dbname`
+
+
 ## Permission
 
 1. Permit execution of an sh file
