@@ -146,9 +146,37 @@
 
 		   md-tex.sh file-name_w/o_extension
 
-	1. In the final tex file
-		- Add `\def\tightlist{}` to the preamble
-		- Add `\input{file-name.tex}` to the target position
+	1. Sample of the final tex file in uplatex
+
+		   % preambles for fonts and page style
+		   \documentclass[12pt,a4paper,dvipdfmx,uplatex]{jsarticle}
+		   \usepackage[top=25truemm,bottom=25truemm,left=25truemm,right=25truemm]{geometry}
+		   \usepackage{newtxtext}
+		   \usepackage{newtxmath}
+
+		   % preambles for pandoc transformation
+		   \def\tightlist{}
+
+		   % preambles for deeply nested lists
+		   \usepackage{enumitem}
+		   \setlistdepth{20}
+		   \renewlist{itemize}{itemize}{20}
+		   \setlist[itemize]{label=\textbullet}
+
+		   % preambles for unnumbered sections
+		   \setcounter{secnumdepth}{0}
+
+		   % preambles for hyperlink
+		   \usepackage{hyperref}
+
+		   \title{}
+		   \author{Konan Hara}
+		   \date{\today}
+		   \begin{document}
+
+		   \input{file-name_pandoc.tex}
+
+		   \end{document}
 
 1. R -> Rnw
 	1. Write R file with Rnw commands like chunks and chapter titles
