@@ -146,42 +146,13 @@
 
 		   md-tex.sh file-name_w/o_extension
 
+	1. Convert md to pdf using latex
+
+		   md-latex.sh file-name_w/o_extension
+
 	1. Convert md to pdf using uplatex
 
 		   md-uplatex.sh file-name_w/o_extension
-
-		- Tex file embedded in the command
-
-			  % preambles for fonts and page style
-			  \documentclass[12pt,a4paper,dvipdfmx,uplatex]{jsarticle}
-			  \usepackage[top=25truemm,bottom=25truemm,left=25truemm,right=25truemm]{geometry}
-			  \usepackage{newtxtext}
-			  \usepackage{newtxmath}
-
-			  % preambles for pandoc transformation
-			  \def\tightlist{}
-
-			  % preambles for deeply nested lists
-			  \usepackage{enumitem}
-			  \setlistdepth{20}
-			  \renewlist{itemize}{itemize}{20}
-			  \setlist[itemize]{label=\textbullet}
-
-			  % preambles for unnumbered sections
-			  \setcounter{secnumdepth}{0}
-
-			  % preambles for hyperlink
-			  \usepackage{hyperref}
-
-			  \title{}
-			  \author{Konan Hara}
-			  \date{\today}
-			  \begin{document}
-
-			  \input{file-name_w/o_extension_pandoc.tex}
-
-			  \end{document}
-		   
 
 1. R -> Rnw
 	1. Write R file with Rnw commands like chunks and chapter titles
@@ -212,9 +183,9 @@
 
 	- Work with database named dbname
 
-		  use dbname
+		  use dbname;
 
-	- Start
+	- Stop
 		  
 		  mysql.server stop
 
