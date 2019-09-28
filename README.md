@@ -148,12 +148,18 @@
 
 	1. Convert md to pdf using latex
 
-		   md-latex.sh file-name_w/o_extension
+		   md-latex.sh (-l) file-name_w/o_extension
+
+		- options
+			- -l landscape
 
 	1. Convert md to pdf using uplatex
 
-		   md-uplatex.sh file-name_w/o_extension
+		   md-uplatex.sh (-l) file-name_w/o_extension
 
+		- options
+			- -l landscape
+			
 1. R -> Rnw
 	1. Write R file with Rnw commands like chunks and chapter titles
 	1. Add `# ` before `\`, `<<`, and `@` to execute as an R file
