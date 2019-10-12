@@ -20,6 +20,7 @@ echo "\usepackage{newtxmath}" >> $1.tex
 echo "\geometry{a4paper}" >> $1.tex
 echo "\usepackage{hyperref}" >> $1.tex
 echo "\usepackage{color}" >> $1.tex
+echo "\usepackage{amssymb}" >> $1.tex
 
 if [ "$OPTION_l" = "TRUE" ]; then
 	echo "\usepackage{lscape}" >> $1.tex
