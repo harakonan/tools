@@ -1,4 +1,4 @@
-# !/bin/bash
+# !/bin/zsh
 # brew install pandoc
 
 while getopts l OPTION
