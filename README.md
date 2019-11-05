@@ -68,13 +68,12 @@
 
 1. bibtex
 	1. Issues
-		- moderncv package
-			- bbl file was not updated without manual compilation
-				- Manual bibtex compilation code
-
-					  bibtex file-name_w/o_extension
-
-				- The cause may be the use of Havard package
+		1. moderncv package
+			- update bbl file after the update of `publications.bib`
+				1. activate the line with `\nocite`
+				1. compile
+				1. comment out the line with `\nocite` after creating bbl file
+				1. compile
 
 1. tex file in Japanese
 	1. jsarticle
