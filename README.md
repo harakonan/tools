@@ -137,6 +137,10 @@
 				- options
 					- -b biber
 
+1. latexdiff-vc
+	1. Compare previous commit with current file
+
+		   latexdiff-vc -e utf8 --git --flatten --force -d diff -r HEAD file_name.tex
 
 ## Format conversions
 
