@@ -1,0 +1,125 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{newtxtext,newtxmath}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{lscape}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{natbib}
+\usepackage{color}
+\usepackage[top=30truemm, bottom=30truemm, left=25truemm, right=25truemm]{geometry}
+
+% preambles for math writing
+\usepackage[group-separator={,}]{siunitx}
+\sisetup{detect-weight=true, detect-family=true}
+% preambles for figures and tables
+\usepackage{tocloft}
+\renewcommand\cftfigpresnum{Figure }
+\renewcommand{\cftfigaftersnum}{.}
+\setlength{\cftfignumwidth}{2cm}
+\setlength{\cftfigindent}{0cm}
+\renewcommand\cfttabpresnum{Table }
+\renewcommand{\cfttabaftersnum}{.}
+\setlength{\cfttabnumwidth}{2cm}
+\setlength{\cfttabindent}{0cm}
+\usepackage[labelsep=period,figurewithin=none,tablewithin=none]{caption}
+\newcommand\fnote[1]{\captionsetup{font=footnotesize,parindent=20pt}\caption*{#1}}
+\usepackage{tikz}
+\usetikzlibrary{calc,trees,positioning,arrows,chains}
+\usepackage{longtable}
+\usepackage{ctable}
+\setupctable{captionsleft}
+\usepackage{dcolumn}
+% preambles for appendix
+\usepackage[toc,page]{appendix}
+\usepackage{ifthen}
+
+\begin{document}
+
+\title{ECON 522B Project\\The effect of buyer and real estate agent racial concordance on housing discrimination}
+\author{Konan Hara\footnote{Department of Economics, University of Arizona. E-mail: harakonan@email.arizona.edu}}
+\date{\today}
+\maketitle
+\doublespacing
+
+% \begin{abstract}
+% 	\noindent
+
+% \end{abstract}
+% {\noindent Keywords:  \\
+% 	JEL codes: }
+	
+\clearpage
+
+\section{Introduction}
+
+
+%%% REFERENCE %%%
+\singlespacing
+\clearpage
+\bibliographystyle{aer}
+\bibliography{reference}
+
+\clearpage
+
+% %%% FIGURES %%%
+
+% \listoffigures
+% \addcontentsline{toc}{section}{List of Figures}
+
+% \clearpage
+
+% \begin{figure}
+% \centering
+% \includegraphics[width=0.9
+% \linewidth]{figures/figure_name}
+% \caption{caption}
+% \label{fig:label}
+% \end{figure}
+
+% \clearpage
+
+% %%% TABLES %%%
+
+% \listoftables
+% \addcontentsline{toc}{section}{List of Tables}
+
+% \clearpage
+
+% \input{tables/table_name}
+
+% \clearpage
+
+% %%% APPENDIX %%%
+
+% % preambles for appendix
+% \let\svaddcontentsline\addcontentsline
+% \renewcommand\addcontentsline[3]{%
+%   \ifthenelse{\equal{#1}{lof}}{}%
+%   {\ifthenelse{\equal{#1}{lot}}{}{\svaddcontentsline{#1}{#2}{#3}}}}
+
+% \appendix
+% \addcontentsline{toc}{section}{Appendices}
+
+% \section*{Appendix}
+
+% \renewcommand{\thefigure}{\Alph{section}\arabic{figure}}
+% \renewcommand{\thetable}{\Alph{section}\arabic{table}}
+
+% \section{section_name_A}
+
+% \setcounter{figure}{0}
+% \setcounter{table}{0}
+
+% \clearpage
+
+% \section{section_name_B}
+
+% \setcounter{figure}{0}
+% \setcounter{table}{0}
+  
+ 
+\end{document}
