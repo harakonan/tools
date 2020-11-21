@@ -1,6 +1,6 @@
 \documentclass[12pt,a4paper]{article}
-\usepackage{amsmath,amssymb}
-\usepackage{newtxtext,newtxmath}
+\usepackage[top=30truemm, bottom=30truemm, left=25truemm, right=25truemm]{geometry}
+\usepackage{newtxtext}
 \usepackage{graphicx}
 \usepackage{setspace}
 \usepackage{lscape}
@@ -10,11 +10,27 @@
 \usepackage{url}
 \usepackage{natbib}
 \usepackage{color}
-\usepackage[top=30truemm, bottom=30truemm, left=25truemm, right=25truemm]{geometry}
 
 % preambles for math writing
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{bbm}
+\usepackage{mathtools}
+\allowdisplaybreaks
 \usepackage[group-separator={,}]{siunitx}
 \sisetup{detect-weight=true, detect-family=true}
+\DeclareMathOperator*{\plim}{plim}
+\DeclareMathOperator*{\var}{Var}
+\DeclareMathOperator*{\cov}{Cov}
+\newcommand{\indep}{\perp \!\!\! \perp}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\I}{\mathbbm{1}}
+\newcommand{\bigO}{\mathcal{O}}
+\newcommand{\argmax}{\mathop{\rm arg~max}\limits}
+\newcommand{\argmin}{\mathop{\rm arg~min}\limits}
+
 % preambles for figures and tables
 \usepackage{tocloft}
 \renewcommand\cftfigpresnum{Figure }
@@ -27,12 +43,11 @@
 \setlength{\cfttabindent}{0cm}
 \usepackage[labelsep=period,figurewithin=none,tablewithin=none]{caption}
 \newcommand\fnote[1]{\captionsetup{font=footnotesize,parindent=20pt}\caption*{#1}}
-\usepackage{tikz}
-\usetikzlibrary{calc,trees,positioning,arrows,chains}
 \usepackage{longtable}
 \usepackage{ctable}
 \setupctable{captionsleft}
 \usepackage{dcolumn}
+
 % preambles for appendix
 \usepackage[toc,page]{appendix}
 \usepackage{ifthen}
