@@ -1,6 +1,6 @@
-# !/bin/bash
-# pip install xlsx2csv
-# brew install --build-from-source catdoc.rb
+# !/bin/zsh
+# xlsx2csv: pip install xlsx2csv
+# xls2csv: brew install --build-from-source catdoc.rb
 
 # convert xlsx/xls to csv with a sheet name
 # store xlsx/xls under raw file folder
@@ -18,5 +18,6 @@
 if [ $1 = xlsx ]; then
 	xlsx2csv -n $2 -q 'all' "$5"/"$3".xlsx "$6"/"$4".csv
 else
+# Note! sheet selection option -b is not working with catdoc
 	xls2csv -b $2 -q 3 "$5"/"$3".xls > "$6"/"$4".csv
 fi
