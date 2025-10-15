@@ -39,6 +39,10 @@
 
 		  git checkout -b harakonan
 
+## Julia
+1. Update
+
+	   jill install
 
 ## LATEX
 
