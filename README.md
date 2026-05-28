@@ -6,10 +6,10 @@
 - `r/`: R tools
 
 ## Git
-1. Update the master branch
+1. Update the main branch
 		
 	   git fetch upstream
-	   git merge upstream/master
+	   git merge upstream/main
 
 	- For the first time, you need to registor the address of the github repository
 
@@ -18,20 +18,20 @@
 1. Commit all current works and push to the upstream
 
 	   git add -A
-	   git commit -a
-	   git push origin master
+	   git commit
+	   git push -u origin main
 
-	- If you are working at the branch other than the master branch
+	- If you are working at the branch other than the main branch
 
-		  git pull origin master
-		  git checkout master
+		  git pull origin main
+		  git checkout main
 		  git merge current_working_branch_name
 
 1. Pull request
 
 	   git add -A
-	   git commit -a
-	   git push origin harakonan
+	   git commit
+	   git push -u origin harakonan
 
 	- harakonan is the name of my working branch
 	- Pull request on the github page after the push
